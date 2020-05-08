@@ -1,0 +1,17 @@
+package view;
+
+import processing.core.PApplet;
+
+public class cuadrado {
+	private PApplet app;
+	private int posX;
+	private int posY;
+	private int TAMANO = 20;
+	
+	public Cuadrado(PApplet app) {
+		this.app = app;
+		posX = (int) app.random(0, 400);
+		posY = (int) app.random(0, 400);
+	}
+	
+}

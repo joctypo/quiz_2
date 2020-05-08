@@ -8,7 +8,6 @@ public class Main extends PApplet {
 	int [][] matriz;
 	int tamañox;
 	int tamañoy;
-	int tipo;
 	
 
 	public static void main(String[] args) {
@@ -27,17 +26,7 @@ public class Main extends PApplet {
 		tamañox=30;
 		tamañoy=20;
 		
-		
 		for (int x=0; x < 20; x++) {
-			
-			 if (x % 2 == 0) {
-			    	
-			    	tipo=1;
-			    }else {
-			    	
-			    	tipo=0;
-			    	
-			    }
 			  for (int y=0; y < 30; y++) {
 			    if (y % 2 == 0) {
 			    	
@@ -46,13 +35,6 @@ public class Main extends PApplet {
 			    	
 			    	matriz[x][y]=0;
 			    	
-			    }
-			    if (tipo==1) {
-			    	
-			    	tipo=0;
-			    }else {
-			    	
-			    	tipo=1;
 			    }
 			  }
 			}
@@ -63,9 +45,6 @@ public class Main extends PApplet {
 	public void draw() {
 		
 		background(150);
-
-
-}
-	
+	}
 
 }

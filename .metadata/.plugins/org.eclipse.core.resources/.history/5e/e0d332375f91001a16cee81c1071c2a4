@@ -1,0 +1,17 @@
+package view;
+
+import java.util.ArrayList;
+import processing.core.PApplet;
+
+public class Main extends PApplet {
+
+	private ArrayList<Bola> figuras;
+	private int CANTIDAD_FIGURAS = 20; 
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PApplet.main("view.Main");
+	}
+
+}
