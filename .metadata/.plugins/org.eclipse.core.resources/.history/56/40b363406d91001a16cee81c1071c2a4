@@ -26,14 +26,14 @@ public class Main extends PApplet {
 	}
 	
 	public void setup() {
-		matriz = new Cuadrado[20][30];
+		matriz = new Cuadrado[30][20];
 		tamañox=30;
 		tamañoy=20;
 		
 		
-		for (int y=0; y < 30; y++) {
+		for (int x=0; x < 30; x++) {
 			
-			 if (y % 2 == 0) {
+			 if (x % 2 == 0) {
 			    	
 			    	tipo=1;
 			    }else {
@@ -41,7 +41,7 @@ public class Main extends PApplet {
 			    	tipo=0;
 			    	
 			    }
-			  for (int x=0; x < 20; x++) {
+			  for (int y=0; y < 20; y++) {
 			 
 			    	
 			    matriz[x][y]=new Cuadrado((pos*y),(pos*x),tipo, null);
@@ -64,9 +64,9 @@ public class Main extends PApplet {
 		
 		background(150);
 
-		for (int y=0; y < 30; y++) {
+		for (int y=0; y < 20; y++) {
 			
-			  for (int x=0; x < 20; x++) {
+			  for (int x=0; x < 30; x++) {
 			 	
 				  if (matriz[x][y].getTipo()==1) {
 						
@@ -78,6 +78,7 @@ public class Main extends PApplet {
 					}
 					
 					rect(matriz[x][y].getPosX(),matriz[x][y].getPosY(),matriz[x][y].getTamano(),matriz[x][y].getTamano());
+					
 			   
 			  }
 			}

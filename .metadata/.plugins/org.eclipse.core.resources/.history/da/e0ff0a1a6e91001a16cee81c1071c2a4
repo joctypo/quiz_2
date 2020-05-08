@@ -26,7 +26,7 @@ public class Main extends PApplet {
 	}
 	
 	public void setup() {
-		matriz = new Cuadrado[20][30];
+		matriz = new Cuadrado[30][20];
 		tamañox=30;
 		tamañoy=20;
 		
