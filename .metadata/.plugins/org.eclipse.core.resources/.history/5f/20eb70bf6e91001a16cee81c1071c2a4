@@ -62,14 +62,12 @@ public class Main extends PApplet {
 	
 	public void draw() {
 		
-		background(255);
+		background(150);
 
 		for (int y=0; y < 30; y++) {
 			
 			  for (int x=0; x < 20; x++) {
 			 	
-				  noStroke();
-				  
 				  if (matriz[x][y].getTipo()==1) {
 						
 						fill(0);
@@ -86,28 +84,6 @@ public class Main extends PApplet {
 		
 
 }
-	
-	
-	public void mouseClicked() {
-		
-		for (int y=0; y < 30; y++) {
-			
-			  for (int x=0; x < 20; x++) {
-			 	
-				  if (y %2!=0) {
-						int posyp=matriz[x][y].getPosY();
-						matriz[x][y].setPosY(posyp-20);
-						
-						int posxp=matriz[x][y].getPosX();
-						matriz[x][y].setPosX(posxp-20);
-				  }
-					
-					
-			   
-			  }
-			}
-		
-	}
 	
 
 }
