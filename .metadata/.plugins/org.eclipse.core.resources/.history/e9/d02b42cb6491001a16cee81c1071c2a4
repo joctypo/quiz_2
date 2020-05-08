@@ -44,10 +44,10 @@ public class Main extends PApplet {
 			  for (int y=0; y < 30; y++) {
 			    if (y % 2 == 0) {
 			    	
-			    	matriz[y][x] = tipo;
+			    	matriz[x][y] = tipo;
 			    }else {
 			    	
-			    	matriz[y][x] = tipo;
+			    	matriz[x][y] = tipo;
 			    	
 			    }
 			    if (tipo==1) {
@@ -69,7 +69,7 @@ public class Main extends PApplet {
 
 		for (int x=0; x < 20; x++) {
 			  for (int y=0; y < 30; y++) {
-			    if (matriz[y][x]==1) {
+			    if (matriz[x][y]==1) {
 			    	fill(0);
 			    }else {
 			    	fill(255);
