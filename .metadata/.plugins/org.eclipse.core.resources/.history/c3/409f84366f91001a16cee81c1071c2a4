@@ -1,6 +1,6 @@
 package view;
 import processing.core.PApplet;
-public class Cuadrado implements Runnable{
+public class Cuadrado {
 	 private PApplet app;
 	 private int posX;
 	 private int posY;
@@ -49,14 +49,20 @@ public class Cuadrado implements Runnable{
 		this.tamano = tamano;
 	}
 
-	@Override
-	public void run() {
+	public void pintar(){
 		
+		/*if (this.tipo==0) {
+			
+			app.fill(0);
+			
+		}else {
+			
+			app.fill(255);
+		}
 		
-		
+		app.rect(this.posX,this.posY,this.tamano,this.tamano);
+		*/
 	}
-
-
 	
 	
 	
