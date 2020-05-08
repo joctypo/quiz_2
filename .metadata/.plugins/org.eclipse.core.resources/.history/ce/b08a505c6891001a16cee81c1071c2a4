@@ -8,7 +8,7 @@ public class Main extends PApplet {
 	Cuadrado[][] matriz;
 	int tamañox;
 	int tamañoy;
-	int tipo=1;
+	int tipo;
 	int tamano=20;
 	int pos=20;
 	

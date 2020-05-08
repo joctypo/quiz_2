@@ -19,16 +19,16 @@ public class Cuadrado {
 	
 	public void pintar(){
 		
-		if (this.tipo==0) {
+		if (tipo==0) {
 			
-			app.fill(0);
+			app.fill(255);
 			
 		}else {
 			
-			app.fill(255);
+			app.fill(0);
 		}
 		
-		app.rect(this.posX,this.posY,this.tamano,this.tamano);
+		app.rect(posX,posY,tamano,tamano);
 		
 	}
 	

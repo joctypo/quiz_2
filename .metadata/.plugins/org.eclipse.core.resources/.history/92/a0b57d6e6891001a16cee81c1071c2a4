@@ -8,7 +8,7 @@ public class Main extends PApplet {
 	Cuadrado[][] matriz;
 	int tamañox;
 	int tamañoy;
-	int tipo=1;
+	int tipo;
 	int tamano=20;
 	int pos=20;
 	
@@ -33,14 +33,7 @@ public class Main extends PApplet {
 		
 		for (int x=0; x < 20; x++) {
 			
-			 if (x % 2 == 0) {
-			    	
-			    	tipo=1;
-			    }else {
-			    	
-			    	tipo=0;
-			    	
-			    }
+	
 			  for (int y=0; y < 30; y++) {
 			 
 			    	
@@ -55,6 +48,15 @@ public class Main extends PApplet {
 			    	tipo=1;
 			    }
 			  }
+			  
+				 if (x % 2 == 0) {
+				    	
+				    	tipo=1;
+				    }else {
+				    	
+				    	tipo=0;
+				    	
+				    }
 			}
 		
 		

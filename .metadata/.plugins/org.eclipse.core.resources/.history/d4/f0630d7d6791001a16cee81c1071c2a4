@@ -8,7 +8,7 @@ public class Main extends PApplet {
 	Cuadrado[][] matriz;
 	int tamañox;
 	int tamañoy;
-	int tipo=1;
+	int tipo;
 	int tamano=20;
 	int pos=20;
 	
@@ -44,7 +44,7 @@ public class Main extends PApplet {
 			  for (int y=0; y < 30; y++) {
 			 
 			    	
-			    	matriz[y][x]=new Cuadrado((pos*y),(pos*x),tipo, null);
+			    	matriz[y][x]=new Cuadrado(pos*y,pos*x,tipo, null);
 			    	
 			   
 			    if (tipo==1) {
@@ -68,7 +68,7 @@ public class Main extends PApplet {
 			
 			  for (int y=0; y < 30; y++) {
 			 	
-			   matriz[y][x].pintar();
+			   matriz[x][y].pintar();
 			   
 			   
 			  }
