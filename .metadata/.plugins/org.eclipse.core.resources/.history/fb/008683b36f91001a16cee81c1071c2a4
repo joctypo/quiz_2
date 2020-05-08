@@ -95,13 +95,11 @@ public class Main extends PApplet {
 			  for (int x=0; x < 20; x++) {
 			 	
 				  if (y %2!=0) {
-					  
-					  matriz[x][y].mover();
-						/*int posyp=matriz[x][y].getPosY();
+						int posyp=matriz[x][y].getPosY();
 						matriz[x][y].setPosY(posyp-20);
 						
 						int posxp=matriz[x][y].getPosX();
-						matriz[x][y].setPosX(posxp-20);*/
+						matriz[x][y].setPosX(posxp-20);
 				  }
 					
 					

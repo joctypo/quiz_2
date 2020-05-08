@@ -51,21 +51,8 @@ public class Cuadrado implements Runnable{
 
 	@Override
 	public void run() {
-		mover();
-		try {
-			
-			Thread.sleep(10);
-		} catch (InterruptedException e) {
-
-			e.printStackTrace();
-		}
 		
-	}
-	
-	public void mover() {
 		
-		this.posY=posY-20;
-		this.posX=posX-20;
 		
 	}
 
