@@ -46,7 +46,9 @@ public class Main extends PApplet {
 			    	
 			    	matriz[y][x]=new Cuadrado(pos*y,pos*x,tipo, null);
 			    	
-			   
+			    	
+			    	
+			    	
 			    if (tipo==1) {
 			    	
 			    	tipo=0;

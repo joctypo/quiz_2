@@ -42,11 +42,15 @@ public class Main extends PApplet {
 			    	
 			    }
 			  for (int y=0; y < 30; y++) {
-			 
+			    if (y % 2 == 0) {
 			    	
-			    	matriz[y][x]=new Cuadrado(pos*y,pos*x,tipo, null);
+			    	matriz[y][x]=new Cuadrado(pos*y,pos*x,tipo);
 			    	
-			   
+			    }else {
+			    	
+			    	
+			    	
+			    }
 			    if (tipo==1) {
 			    	
 			    	tipo=0;
