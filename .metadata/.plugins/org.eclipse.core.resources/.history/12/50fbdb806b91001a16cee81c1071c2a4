@@ -58,10 +58,10 @@ public class Cuadrado {
 		}else {
 			
 			app.fill(255);
-		}
+		}*/
 		
-		app.rect(this.posX,this.posY,this.tamano,this.tamano);
-		*/
+		//app.rect(this.posX,this.posY,this.tamano,this.tamano);
+		
 	}
 	
 	

@@ -51,7 +51,7 @@ public class Cuadrado {
 
 	public void pintar(){
 		
-		/*if (this.tipo==0) {
+		if (this.tipo==0) {
 			
 			app.fill(0);
 			
@@ -61,7 +61,7 @@ public class Cuadrado {
 		}
 		
 		app.rect(this.posX,this.posY,this.tamano,this.tamano);
-		*/
+		
 	}
 	
 	

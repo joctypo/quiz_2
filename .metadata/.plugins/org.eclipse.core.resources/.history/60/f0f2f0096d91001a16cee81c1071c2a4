@@ -20,7 +20,7 @@ public class Main extends PApplet {
 	
 	
 	public void settings() {
-		size (600,400);
+		size (400,600);
 		
 		
 	}

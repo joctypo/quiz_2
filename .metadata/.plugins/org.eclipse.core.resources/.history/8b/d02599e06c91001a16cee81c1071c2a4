@@ -68,7 +68,7 @@ public class Main extends PApplet {
 			
 			  for (int x=0; x < 30; x++) {
 			 	
-				  if (matriz[x][y].getTipo()==1) {
+				  if (matriz[y][x].getTipo()==1) {
 						
 						fill(0);
 						

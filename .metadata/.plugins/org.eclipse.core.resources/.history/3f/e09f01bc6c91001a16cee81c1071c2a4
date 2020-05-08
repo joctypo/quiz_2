@@ -64,11 +64,11 @@ public class Main extends PApplet {
 		
 		background(150);
 
-		for (int y=0; y < 20; y++) {
+		for (int x=0; x < 30; x++) {
 			
-			  for (int x=0; x < 30; x++) {
+			  for (int y=0; y < 20; y++) {
 			 	
-				  if (matriz[x][y].getTipo()==1) {
+				  if (this.tipo==0) {
 						
 						fill(0);
 						

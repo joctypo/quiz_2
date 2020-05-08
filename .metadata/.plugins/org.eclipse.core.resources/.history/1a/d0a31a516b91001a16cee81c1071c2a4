@@ -31,7 +31,7 @@ public class Main extends PApplet {
 		tamañoy=20;
 		
 		
-		for (int x=0; x < 30; x++) {
+		for (int x=0; x < 20; x++) {
 			
 			 if (x % 2 == 0) {
 			    	
@@ -41,10 +41,10 @@ public class Main extends PApplet {
 			    	tipo=0;
 			    	
 			    }
-			  for (int y=0; y < 20; y++) {
+			  for (int y=0; y < 30; y++) {
 			 
 			    	
-			    matriz[x][y]=new Cuadrado((pos*y),(pos*x),tipo, null);
+			    matriz[y][x]=new Cuadrado((pos*y),(pos*x),tipo, null);
 			   
 			   
 			    if (tipo==1) {
@@ -56,7 +56,7 @@ public class Main extends PApplet {
 			    }
 			  }
 			}
-		//System.out.println(matriz[20][19].getTipo()); 
+		 System.out.println(matriz[19][29].getTipo());
 		
 	}
 	
@@ -64,21 +64,11 @@ public class Main extends PApplet {
 		
 		background(150);
 
-		for (int y=0; y < 20; y++) {
+		for (int x=0; x < 20; x++) {
 			
-			  for (int x=0; x < 30; x++) {
+			  for (int y=0; y < 30; y++) {
 			 	
-				  if (matriz[x][y].getTipo()==1) {
-						
-						fill(0);
-						
-					}else {
-						
-						fill(255);
-					}
-					
-					rect(matriz[x][y].getPosX(),matriz[x][y].getPosY(),matriz[x][y].getTamano(),matriz[x][y].getTamano());
-					
+			   matriz[y][x].pintar();
 			   
 			  }
 			}
